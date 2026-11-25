@@ -2,7 +2,8 @@
   color-scheme: light;
   --paper: #f2f1ec;
   --ink: #171916;
-  --orange: #ef432e;
+  --orange: #a94b3a;
+  --terracotta-soft: #e8c9c1;
   --blue: #d8e1ed;
   --muted: #62655f;
   --rule: #171916;
@@ -17,7 +18,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 .wrap { width: min(1240px, calc(100% - 64px)); margin-inline: auto; }
-.preview { padding: 9px 20px; background: var(--orange); text-align: center; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.preview { padding: 9px 20px; background: var(--orange); color: white; text-align: center; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .site-header { position: relative; z-index: 5; }
 .nav { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 22px; padding: 18px 0; border-bottom: 3px solid var(--ink); }
 .brand { color: var(--ink); font-size: 18px; font-weight: 900; line-height: 1; letter-spacing: -.055em; text-decoration: none; text-transform: uppercase; }
@@ -25,7 +26,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .nav__links { display: flex; align-items: center; gap: 27px; }
 .nav__link { color: var(--ink); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
 .nav__link:hover { color: var(--orange); }
-.button { display: inline-flex; align-items: center; justify-content: center; padding: 13px 16px; border: 0; background: var(--orange); color: var(--ink); cursor: pointer; font: 800 10px var(--sans); letter-spacing: .08em; text-align: center; text-decoration: none; text-transform: uppercase; }
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 13px 16px; border: 0; background: var(--orange); color: white; cursor: pointer; font: 800 10px var(--sans); letter-spacing: .08em; text-align: center; text-decoration: none; text-transform: uppercase; }
 .button:hover { background: var(--ink); color: white; }
 .menu-toggle { display: none; padding: 9px 12px; border: 1px solid var(--ink); background: transparent; color: var(--ink); font: 800 10px var(--sans); letter-spacing: .08em; }
 .eyebrow { color: var(--orange); font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
@@ -42,7 +43,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .feature__image { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; filter: saturate(.82); }
 .feature__iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
 .feature__play:hover .feature__image { filter: saturate(1.05); }
-.play-mark { position: absolute; top: 50%; left: 50%; display: grid; width: 48px; aspect-ratio: 1; transform: translate(-50%, -50%); place-items: center; background: var(--orange); color: var(--ink); font-size: 17px; }
+.play-mark { position: absolute; top: 50%; left: 50%; display: grid; width: 48px; aspect-ratio: 1; transform: translate(-50%, -50%); place-items: center; background: var(--orange); color: white; font-size: 17px; }
 .feature__meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 15px 15px; color: white; }
 .feature__title { margin: 0; font-size: 19px; font-weight: 800; line-height: 1.1; letter-spacing: -.03em; }
 .feature__label { color: #f2b0a5; font-size: 9px; letter-spacing: .1em; text-align: right; text-transform: uppercase; }
@@ -57,7 +58,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .section { padding-block: 68px; }
 .section--episodes { padding-top: 68px; }
 .section--journal { border-top: 3px solid var(--ink); background: white; }
-.section--audio { border-block: 3px solid var(--ink); background: var(--orange); }
+.section--audio { border-block: 3px solid var(--ink); background: var(--terracotta-soft); }
 .section__header { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 3px solid var(--ink); }
 .section__title { margin: 8px 0 0; font: 900 clamp(38px, 5vw, 64px)/.94 var(--display); letter-spacing: -.025em; }
 .section__intro { max-width: 330px; margin: 0 0 2px; color: #50524e; font-size: 12px; line-height: 1.6; }
