@@ -46,27 +46,27 @@ const articles = [
     index: "Read 001 · Communication",
     title: "When Your Child Stops Telling You What's Really Going On",
     summary: "Silence can be a sign that a young person expects correction before understanding. A starting point for parents: make space, ask gently, and listen through the pause.",
-    meta: "Sample blog feature · 5 minute read",
+    meta: "Featured story · 5 minute read",
     lead: true,
   },
   {
     index: "Read 002 · Family",
     title: "Listening Before Advice",
     summary: "Why adult children may need curiosity and acknowledgment more than another instruction.",
-    meta: "Sample blog idea · 4 minute read",
+    meta: "4 minute read",
   },
   {
     index: "Read 003 · Parenting",
     title: "What Pressure Can Look Like at Home",
     summary: "A reflection on stress, anger and the effect our reactions have on the people closest to us.",
-    meta: "Sample blog idea · 6 minute read",
+    meta: "6 minute read",
   },
 ];
 
 const audioEpisodes = [
-  { number: "01", title: "Healing Begins with the Truth", label: "Family repair · MP3 episode" },
-  { number: "02", title: "Why We Stop Opening Up", label: "Communication · MP3 episode" },
-  { number: "03", title: "A Father's Advice About Love", label: "Relationships · MP3 episode" },
+  { number: "01", title: "Healing Begins with the Truth", label: "Family repair" },
+  { number: "02", title: "Why We Stop Opening Up", label: "Communication" },
+  { number: "03", title: "A Father's Advice About Love", label: "Relationships" },
 ];
 
 function renderEpisodes() {
