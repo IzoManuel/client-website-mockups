@@ -3,156 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2f1ec">
-  <meta name="description" content="A concept for the Family Therapy Podcast website, with conversations, articles, and audio episodes.">
-  <title>Family Therapy Podcast — Website concept</title>
-  <link rel="stylesheet" href="assets/css/site.css">
-  <script src="assets/js/site.js" defer></script>
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Website concepts prepared for client review.">
+  <title>Website concepts | Tekkstudio</title>
+  <style>
+    :root { color-scheme: light; --ink:#252922; --muted:#666b62; --paper:#f7f5ef; --line:#d9d7ce; --accent:#b5563b; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.6 Georgia, 'Times New Roman', serif; }
+    main { width:min(100% - 40px, 760px); margin:12vh auto; }
+    .eyebrow { color:var(--accent); font:700 12px/1.4 Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { max-width:650px; margin:14px 0; font-size:clamp(2.6rem,8vw,5rem); font-weight:400; letter-spacing:-.045em; line-height:.98; }
+    .intro { max-width:540px; color:var(--muted); font-size:1.12rem; }
+    h2 { margin:54px 0 12px; font:700 12px/1.4 Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+    ul { margin:0; padding:0; border-top:1px solid var(--line); list-style:none; }
+    li { border-bottom:1px solid var(--line); }
+    a { display:flex; justify-content:space-between; gap:20px; padding:18px 0; color:inherit; text-decoration:none; }
+    a:hover span:first-child { color:var(--accent); }
+    a span:last-child { color:var(--muted); font:12px/1.5 Arial,sans-serif; }
+    footer { margin-top:70px; color:var(--muted); font:12px/1.5 Arial,sans-serif; }
+  </style>
 </head>
 <body>
-  <div class="preview">Concept preview · Draft copy and visual direction · Confirm names, credentials, services and contact details before launch</div>
-
-  <header class="site-header">
-    <div class="wrap">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#home">Family Therapy Podcast<small>CHACHA &amp; CO.</small></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">MENU</button>
-        <div class="nav__links" id="nav-links">
-          <a class="nav__link" href="#episodes">Episodes</a>
-          <a class="nav__link" href="#journal">Journal</a>
-          <a class="nav__link" href="#podcast">Podcast</a>
-          <a class="nav__link" href="#about">About</a>
-          <a class="button" href="https://www.youtube.com/@familytherapypodcast/videos" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="wrap hero" aria-labelledby="hero-title">
-      <div class="hero__copy">
-        <div class="eyebrow">Honest conversations for family life</div>
-        <h1 class="hero__title" id="hero-title">Make room for the conversations families avoid.</h1>
-        <p class="hero__description">Real talks about parenting, relationships and the moments that shape how we show up for one another. Listen, reflect, and find a starting point for your next conversation.</p>
-        <div class="hero__actions">
-          <a class="button" href="#episodes">Explore the episodes ↓</a>
-          <a class="text-link" href="#about">Get to know the show</a>
-        </div>
-      </div>
-
-      <div class="hero__media">
-        <span class="hero__badge" aria-hidden="true">01</span>
-        <div class="feature">
-          <button class="feature__play" type="button" aria-label="Play featured episode: Healing begins with the truth and the pain we avoid" data-video="1nzvbq_Dom4">
-            <img class="feature__image" src="assets/images/1nzvbq_Dom4.jpg" alt="The podcast hosts in conversation, shown in the featured episode thumbnail">
-            <span class="play-mark" aria-hidden="true">▶</span>
-          </button>
-          <div class="feature__meta">
-            <strong class="feature__title">When the Truth Opens a Door</strong>
-            <span class="feature__label">Featured conversation · Play on YouTube</span>
-          </div>
-        </div>
-        <p class="feature__note">Video loads from YouTube when you press play.</p>
-      </div>
-    </section>
-
-    <div class="principles" aria-label="Show values">
-      <div class="wrap principles__inner"><span>Listen with curiosity</span><b aria-hidden="true">•</b><span>Take what helps</span><b aria-hidden="true">•</b><span>Keep the conversation going</span></div>
-    </div>
-
-    <section class="wrap section section--episodes" id="episodes" aria-labelledby="episodes-title">
-      <div class="section__header">
-        <div><div class="eyebrow">From the channel</div><h2 class="section__title" id="episodes-title">Conversations to come back to.</h2></div>
-        <p class="section__intro">Start with a question that feels familiar. Each episode opens up a different part of family life.</p>
-      </div>
-      <div class="filters" role="group" aria-label="Filter episodes">
-        <button class="filter" type="button" aria-pressed="true" data-filter="all">All conversations</button>
-        <button class="filter" type="button" aria-pressed="false" data-filter="parenting">Parenting</button>
-        <button class="filter" type="button" aria-pressed="false" data-filter="communication">Communication</button>
-        <button class="filter" type="button" aria-pressed="false" data-filter="relationships">Relationships</button>
-      </div>
-      <div class="card-grid" id="episode-grid" aria-live="polite">
-        <div class="more-card">
-          <h3 class="more-card__title">Keep listening.</h3>
-          <p class="more-card__text">Explore the full video archive and find the newest conversations on YouTube.</p>
-          <a class="text-link" href="https://www.youtube.com/@familytherapypodcast/videos" target="_blank" rel="noopener noreferrer">Visit the channel ↗</a>
-        </div>
-      </div>
-      <template id="episode-template">
-        <article class="content-card" data-topic="">
-          <a class="content-card__link" href="" target="_blank" rel="noopener noreferrer">
-            <div class="content-card__image-wrap"><img class="content-card__image" src="" alt="" loading="lazy"></div>
-            <div class="content-card__body">
-              <span class="content-card__tag"></span>
-              <h3 class="content-card__title"></h3>
-              <p class="content-card__summary"></p>
-              <span class="content-card__meta"></span>
-            </div>
-          </a>
-        </article>
-      </template>
-    </section>
-
-    <section class="section section--journal" id="journal" aria-labelledby="journal-title">
-      <div class="wrap">
-        <div class="section__header">
-          <div><div class="eyebrow">The journal · Blog</div><h2 class="section__title" id="journal-title">Ideas worth sitting with.</h2></div>
-          <p class="section__intro">Short reads to carry the conversation further. Sample article ideas below are based on recent show themes; final posts and wording will be developed with the hosts.</p>
-        </div>
-        <div class="journal-grid" id="journal-grid"></div>
-      </div>
-      <template id="journal-template">
-        <article class="journal-card">
-          <span class="journal-card__index"></span>
-          <h3 class="journal-card__title"></h3>
-          <p class="journal-card__summary"></p>
-          <span class="journal-card__meta"></span>
-        </article>
-      </template>
-    </section>
-
-    <section class="section section--audio" id="podcast" aria-labelledby="podcast-title">
-      <div class="wrap">
-        <div class="section__header">
-          <div><div class="eyebrow">Audio podcast · MP3</div><h2 class="section__title" id="podcast-title">Take the conversation with you.</h2></div>
-          <p class="section__intro">Audio editions for listening on the move. Each episode will have a web player and an MP3 download when the audio file is supplied.</p>
-        </div>
-        <div class="audio-list" id="audio-list"></div>
-        <p class="audio-note">Player appearance shown for the concept. Audio controls and downloads will activate when the MP3 episodes are ready.</p>
-      </div>
-      <template id="audio-template">
-        <article class="audio-row">
-          <span class="audio-row__number"></span>
-          <div class="audio-row__title"><span class="audio-row__name"></span><small class="audio-row__label"></small></div>
-          <div class="audio-preview">
-            <button class="audio-preview__button" type="button" disabled aria-label="Audio preview unavailable">▶</button>
-            <span class="audio-preview__track" aria-hidden="true"></span>
-            <span class="audio-preview__time">MP3 SOON</span>
-          </div>
-        </article>
-      </template>
-    </section>
-
-    <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="wrap about__grid">
-        <div><div class="eyebrow">A little about the show</div><h2 class="about__title" id="about-title">Family life is built in the conversations.</h2></div>
-        <div class="about__copy">
-          <p>Family Therapy Podcast makes space for open conversations about parenting, relationships, emotional health and the ways families can better understand one another. The show brings lived experience and thoughtful discussion to topics many people find hard to raise.</p>
-          <p>Whether you are listening on your own or sharing an episode with someone close, we hope you find a useful prompt to take into everyday life.</p>
-          <p class="about__note">This is a draft description based on public channel materials. Host biography, professional credentials, services and the show’s preferred wording need the host’s review before publication.</p>
-        </div>
-      </div>
-    </section>
+  <main>
+    <div class="eyebrow">Tekkstudio · Client previews</div>
+    <h1>Website concepts, ready to explore.</h1>
+    <p class="intro">A collection of draft website directions prepared for client review. Each preview is a working visual concept; final content and details are confirmed during production.</p>
+    <h2>Current previews</h2>
+    <ul>
+      <li><a href="previews/family-therapy-podcast/"><span>Family Therapy Podcast</span><span>Open concept ↗</span></a></li>
+    </ul>
+    <footer>Concepts are works in progress and intended for discussion with their respective clients.</footer>
   </main>
-
-  <footer class="footer">
-    <div class="wrap footer__row">
-      <div>
-        <a class="brand" href="#home">Family Therapy Podcast<small>CHACHA &amp; CO.</small></a>
-        <p class="footer__note">Draft boundary note for review: Episodes are general discussion and education, not individual therapy or crisis support.</p>
-      </div>
-      <p class="footer__copy footer__copy--right">Watch the full video archive on <a href="https://www.youtube.com/@familytherapypodcast/videos" target="_blank" rel="noopener noreferrer">YouTube ↗</a><br><span class="footer__note">Contact details and any additional links to be confirmed with the host.</span></p>
-    </div>
-  </footer>
 </body>
 </html>
